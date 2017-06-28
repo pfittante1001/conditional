@@ -40,13 +40,14 @@ namespace conditional
                 Console.WriteLine("Congradulations your party receives a 5% discount on your total bill");
                 Console.Write("Your total bill is: " + grndTtl);
             }
-            */
+          
+           
             int age;
 
             Console.Write("Please enter your age: ");
             age = int.Parse(Console.ReadLine());
 
-            if (age >= 0 && age <= 2)
+            if (age > 0 && age <= 2)
             {
                 Console.WriteLine("Still in mamas arms");
 
@@ -80,6 +81,50 @@ namespace conditional
             }else
             {
                 Console.WriteLine("The program is for humans");
+            }
+            */
+
+            Console.Write("Please enter a word that corresponds with a number between 1 - 10: ");
+            string number = Console.ReadLine();
+            switch (number)
+            {
+                case "one":
+                    Console.WriteLine("The number that corresponds with " + number + " is 1");
+                    break;
+                case "two":
+                    Console.WriteLine("The number that corresponds with " + number + " is 2");
+                    break;
+                case "three":
+                    Console.WriteLine("The number that corresponds with " + number + " is 3");
+                    break;
+                case "four":
+                    Console.WriteLine("The number that corresponds with " + number + " is 4");
+                    break;
+                case "five":
+                    Console.WriteLine("The number that corresponds with " + number + " is 5");
+                    break;
+                case "six":
+                    Console.WriteLine("The number that corresponds with " + number + " is 6");
+                    break;
+                case "seven":
+                    Console.WriteLine("The number that corresponds with " + number + " is 7");
+                    break;
+                case "eigh":
+                    Console.WriteLine("The number that corresponds with " + number + " is 8");
+                    break;
+                case "nine":
+                    Console.WriteLine("The number that corresponds with " + number + " is 9");
+                    break;
+                case "ten":
+                    Console.WriteLine("The number that corresponds with " + number + " is 10");
+                    break;
+                case "zero":
+                    Console.WriteLine("The number that corresponds with " + number + " is 0");
+                    break;
+                default:
+                    Console.WriteLine("The value you enetered is invalid");
+                    break;
+            
             }
         }
     }
